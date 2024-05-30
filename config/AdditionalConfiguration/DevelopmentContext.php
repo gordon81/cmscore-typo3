@@ -12,7 +12,7 @@ $GLOBALS['TYPO3_CONF_VARS']['LOG']['writerConfiguration'] = [
         'TYPO3\CMS\Core\Log\Writer\FileWriter' => ['disabled' => false]
     ]
 ];
-
+/*
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['content_sync']['sourceNode'] = [
     'basePath' => '/home/demo-content/content.demo.typo3.org/shared',
     'bin' => '/home/demo-content/content.demo.typo3.org/release/bin/typo3',
@@ -25,3 +25,9 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['content_sync']['targetNode'] = [
     'connection' => '',
     'local' => '1',
 ];
+*/
+
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['reverseProxySSL'] = '*';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['reverseProxyIP'] = '*';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = 'typo3.finanztip.test';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['reverseProxyHeaderMultiValue'] = 'first';

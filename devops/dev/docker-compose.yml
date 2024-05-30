@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app-cmscore-typo3:
+    container_name: cmscore-typo3
+    image: itdevops2023finanztip/php:8.2-dev
+    restart: always
+    working_dir: "/var/www/cmscore-typo3"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"

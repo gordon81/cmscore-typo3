@@ -82,6 +82,7 @@ return [
         ],
         'solr' => [
             'allowSelfSignedCertificates' => '0',
+            'enableRouteEnhancer' => '0',
             'includeGlobalQParameterInCacheHash' => '0',
             'monitoringType' => '0',
             'pluginNamespaces' => 'tx_solr',
@@ -145,7 +146,7 @@ return [
         'belogErrorReporting' => 32765,
         'devIPmask' => '127.0.0.1,::1',
         'displayErrors' => -1,
-        'encryptionKey' => false,
+        'encryptionKey' => '6873ceaa6bdba1106a41b56fada616f57025b3a3b7518179f2496197979bbbb5a0c23123bad93025a4c52e1fa6764803',
         'exceptionalErrors' => 4341,
         'features' => [
             'felogin.extbase' => true,
@@ -157,6 +158,7 @@ return [
         'sitename' => 'TYPO3 Demo',
         'systemMaintainers' => [
             1,
+            3,
         ],
     ],
 ];

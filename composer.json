@@ -3,7 +3,7 @@
 		"bin-dir": "bin",
 		"sort-packages": true,
 		"platform": {
-			"php": "^8.2"
+			"php": "8.2.18"
 		},
 		"allow-plugins": {
 			"helhum/dotenv-connector": true,
@@ -30,8 +30,7 @@
 		}
 	},
 	"require": {
-		"php": "^8.2",
-		"apache-solr-for-typo3/solr": "dev-main",
+		"php": "8.2.18",
 		"b13/assetcollector": "^2.0.2",
 		"b13/backendpreviews": "^1.0",
 		"b13/bolt": "^2.3.0",
