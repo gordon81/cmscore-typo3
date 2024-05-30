@@ -1,0 +1,11 @@
+Dockerfile
+docker-compose.yml
+scripts/ext-xdebug.ini
+mysql_share/*.sql
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/encodings.xml
+.idea/docker_v8.iml
+.idea/deployment.xml
+.env
