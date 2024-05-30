@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => false,
-        'installToolPassword' => getenv('TYPO3_INSTALLER_PASSWORD'),
+        'installToolPassword' => false,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -12,16 +12,16 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'dbname' => getenv('TYPO3_DB_DATABASE'),
+                'dbname' => 'cmscore-typo3',
                 'driver' => 'mysqli',
-                'host' => getenv('TYPO3_DB_HOST'),
-                'password' => getenv('TYPO3_DB_PASSWORD'),
+                'host' => 'database',
+                'password' => 'changeme',
                 'port' => 3306,
                 'tableoptions' => [
                     'charset' => 'utf8mb4',
                     'collate' => 'utf8mb4_unicode_ci',
                 ],
-                'user' => getenv('TYPO3_DB_USERNAME'),
+                'user' => 'admin',
             ],
         ],
     ],
@@ -145,7 +145,7 @@ return [
         'belogErrorReporting' => 32765,
         'devIPmask' => '127.0.0.1,::1',
         'displayErrors' => -1,
-        'encryptionKey' => getenv('TYPO3_ENCRYPTION_KEY'),
+        'encryptionKey' => false,
         'exceptionalErrors' => 4341,
         'features' => [
             'felogin.extbase' => true,
